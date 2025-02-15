@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import image from '../images/bouquet.png';
+	import image from '$lib/images/bouquet.png';
 	import { openModal } from '$lib/utils';
 
 	openModal('winner-modal', {
