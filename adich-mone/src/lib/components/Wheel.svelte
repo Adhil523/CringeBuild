@@ -88,8 +88,8 @@
 
 <div class="aspect-square max-w-full flex-1">
 	<canvas
-		width="700"
-		height="700"
+		width="500"
+		height="500"
 		bind:this={canvas}
 		onclick={click}
 		onkeydown={click}
