@@ -1,5 +1,13 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import image from '../images/bouquet.png';
+	import { openModal } from '$lib/utils';
+
+	openModal('winner-modal', {
+		winner: {
+			id: 'ckqjw'
+		}
+	});
 </script>
 
 <div class="flex h-screen w-full bg-red-50">
@@ -7,7 +15,7 @@
 		<img src={image} class="size-64 sm:size-44" alt="" />
 		<div class="flex flex-col gap-x-4 gap-y-4 px-6">
 			<span class="font">Adichu Mone!</span>
-			<span class="text-lg font-light opacity-80"
+			<span class="text-xl font-light opacity-90 sm:text-lg"
 				>Single & Ready to mingle? Exclusively for all your single & testing your luck buddies. Spin
 				it & test it!</span
 			>
