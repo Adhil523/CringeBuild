@@ -47,6 +47,6 @@ export const hubSizes: Record<HubSize, number> = {
 	L: 0.5,
 	XL: 0.75
 };
-export const defaultColors = ['#6693fa', '#eb6574', '#f5d273', '#6be88a'];
+export const defaultColors = ['#FEF2E2', '#EF4444'];
 export const confettiTypes = ['fireworks', 'cannons', 'stars', 'off'] as const;
 export type ConfettiType = (typeof confettiTypes)[number];
