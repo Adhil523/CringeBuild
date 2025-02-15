@@ -94,13 +94,7 @@ export const addIdsToEntries = (entries: Omit<Entry, 'id'>[]) => {
 
 export const getNewEntryId = () => crypto.randomUUID().split('-')[0];
 
-export const defaultEntries: Entry[] = [
-	'Ali',
-	'Beatriz',
-	'Charles',
-	'Diya',
-	'Eric',
-	'Fatima',
-	'Gabriel',
-	'Hanna'
-].map((text) => ({ text, id: getNewEntryId() }));
+export const defaultEntries: Entry[] = ['1', '2', '3', '4', '5', '6', '7', '8'].map((text) => ({
+	text,
+	id: getNewEntryId()
+}));
