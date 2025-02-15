@@ -1,5 +1,6 @@
 import type { ModalComponent } from '@skeletonlabs/skeleton';
+import WinnerModal from '$lib/components/modals/WinnerModal.svelte';
 
 export const modalRegistry: Record<string, ModalComponent> = {
-	// winnerModal: { ref: WinnerModal }
+	'winner-modal': { ref: WinnerModal }
 };
