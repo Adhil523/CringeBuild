@@ -1,12 +1,13 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import image from '$lib/images/bouquet.png';
 	import { openModal } from '$lib/utils';
 
-	openModal('winner-modal', {
-		winner: {
-			id: 'ckqjw'
-		}
-	});
+	// openModal('winner-modal', {
+	// 	winner: {
+	// 		id: 'ckqjw'
+	// 	}
+	// });
 </script>
 
 <div class="flex h-screen w-full bg-red-50">
@@ -18,7 +19,10 @@
 				>Single & Ready to mingle? Exclusively for all your single & testing your luck buddies. Spin
 				it & test it!</span
 			>
-			<button class="rounded-md bg-red-500 px-8 py-3 text-white">Spin it now</button>
+			<button
+				class="rounded-md bg-red-500 px-8 py-3 text-white"
+				on:click={async () => await goto('/spin')}>Spin it now</button
+			>
 		</div>
 	</div>
 </div>
