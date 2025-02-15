@@ -3,6 +3,6 @@
 	import { openModal } from '$lib/utils';
 </script>
 
-<div class="flex flex-col items-center">
-	<Wheel on:stop={(e) => openModal('winnerModal', { winner: e.detail.winner })} />
+<div class="flex flex-col items-center bg-red-50 pt-56">
+	<Wheel on:stop={(e) => openModal('winner-modal', { winner: e.detail.winner })} />
 </div>

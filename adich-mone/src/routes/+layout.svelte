@@ -11,4 +11,6 @@
 </script>
 
 <Modal components={modalRegistry} />
-{@render children()}
+<div class="h-screen w-full bg-red-50">
+	{@render children()}
+</div>
